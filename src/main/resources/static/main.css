@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #5a3d5c;
+}
+.main-page{
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    height: 500px;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+}
+.hidden{
+    display: none;
+}
+.box{
+    width: 300px;
+    background: #200f21 ;
+    padding: 40px;
+}
+
+.box h1{
+    color: white;
+    text-transform: uppercase;
+}
+
+.box input[type = "text"],.box input[type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #eae9e9;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]{
+    width: 288px;
+    border-color: #f638dc;
+    padding: 8px 5px;
+}
+
+.box input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box-bottom{
+    padding: 40px;
+    width: 300px;
+    background: #382039;
+
+}
+
+.giris{
+    border: 0;
+    background: none;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 10px;
+    text-decoration:none;
+    alignment: left;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.kayit{
+    border: 0;
+    background: none;
+    margin: 20px auto;
+    text-decoration:none;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 10px;
+    outline: none;
+    alignment: right;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
