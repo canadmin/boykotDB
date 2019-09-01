@@ -96,3 +96,29 @@ body{
     border-radius: 24px;
     transition: 0.25s;
 }
+
+.nav-header{
+    width: 50%;
+    display: block;
+    margin-top: 2px;
+
+    text-align: center;
+    background: #200f21;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.nav-header a{
+   color: #eae9e9;
+    text-decoration:none;
+    outline: none;
+    padding: 25px;
+    border :0;
+}
+.nav-header a:hover{
+    color: #ea46db;
+
+}
+
