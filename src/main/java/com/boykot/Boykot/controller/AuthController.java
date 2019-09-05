@@ -30,7 +30,7 @@ public class AuthController {
                         HttpServletRequest httpServletRequest){
 
         System.out.println(user.getEmail());
-        return "index.html";
+        return "pages/boycotts.html";
     }
 
     @PostMapping("/regUser")
