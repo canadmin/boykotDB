@@ -22,26 +22,26 @@ public class AuthController {
         this.userService = userService;
     }
 
-    @RequestMapping("/login")
-    public String LoginController(Model model){
-        model.addAttribute("user",new User());
+    @GetMapping("/login")
+    public String LoginController(Model model) {
+        model.addAttribute("user", new User());
+
         return "index.html";
     }
 
     @GetMapping("/")
     public String login(@ModelAttribute("user") User user,
-                        HttpServletRequest httpServletRequest){
-
-        System.out.println(user.getEmail());
+                        HttpServletRequest httpServletRequest) {
         return "pages/boycotts.html";
     }
+
 
     @PostMapping("/regUser")
     public String register(@Valid User user,
                            HttpServletRequest httpServletRequest,
                            BindingResult bindingResult,
-                           Model model){
-        if(bindingResult.hasErrors()){
+                           Model model) {
+        if (bindingResult.hasErrors()) {
             return "index.html";
         }
         userService.registerUser(user);

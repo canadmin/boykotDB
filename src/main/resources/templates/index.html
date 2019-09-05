@@ -13,11 +13,11 @@
 <div class="main-page">
     <div class="auth-page">
         <div class="login">
-            <form class="box" th:action="@{/login}" method="post" th:object="${user}">
+            <form class="box" th:action="@{/login}" method="post">
                 <h1>Giriş</h1>
-                <input type="text" name="" autocomplete="off" th:field="*{email}" placeholder="Email">
-                <input type="text" name="" autocomplete="off" th:field="*{password}" placeholder="Sifre">
-                <input type="submit"  name="" th:value="Giris">
+                <input type="text" autocomplete="off" id="email" name="email" placeholder="Email">
+                <input type="text" autocomplete="off" id="password" name="password" placeholder="Password">
+                <input type="submit" name="" th:value="Giris">
             </form>
         </div>
 
@@ -26,7 +26,7 @@
                 <h1>Kayit</h1>
                 <input type="text" name="" autocomplete="off" th:field="*{fullName}" placeholder="takmaAd">
                 <input type="text" name="" autocomplete="off" th:field="*{email}" placeholder="Email">
-                <input type="text" name="" autocomplete="off" th:field="*{password}"placeholder="Sifre">
+                <input type="text" name="" autocomplete="off" th:field="*{password}" placeholder="Sifre">
                 <input type="submit" name="" th:value="Katıl">
             </form>
         </div>
