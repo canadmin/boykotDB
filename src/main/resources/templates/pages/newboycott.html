@@ -12,13 +12,13 @@
     <div th:replace="fragments/header :: header"></div>
         <div class="newboycott-page">
                 <form class="boycott-box" method="post" th:action="@{/sendBoycott}" th:object="${boycot}">
-                    <h3> Boykot edilen</h3>
-                    <input class="boycot-input" type="text" th:field="*{boycotted}">
-                   <h3>Sebep</h3>
-                    <textarea rows="3" th:field="*{reason}">
-                    </textarea>
-                    <input type="hidden" th:field="*{byWhom}">
-                    <button class="boycot-baslat-button"> Boycott</button>
+                     <h3>Boykot edilen</h3>
+                     <input class="boycot-input" type="text" th:field="*{boycotted}">
+                     <h3>Sebep</h3>
+                     <textarea rows="3" th:field="*{reason}">
+                     </textarea>
+                     <input type="hidden" th:field="*{byWhom}">
+                     <button class="boycot-baslat-button"> Boycott</button>
                 </form>
         </div>
 
