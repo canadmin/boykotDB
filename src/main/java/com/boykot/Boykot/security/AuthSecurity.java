@@ -47,7 +47,7 @@ public class AuthSecurity extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests().antMatchers("/resources/**", "/login", "/css/**", "/webjars/**", "/regUser")
                 .permitAll()
-                .antMatchers("/newBoycott").hasRole("USER")
+                .antMatchers("/newBoycott").hasAnyAuthority("USER")
                 .and().formLogin().loginPage("/login").failureUrl("/login?error=true")
                 .usernameParameter("email")
                 .passwordParameter("password")

@@ -10,6 +10,8 @@
 
 </head>
 <body>
+<div th:replace="fragments/header :: header"></div>
+
 <div class="main-page">
     <div class="auth-page">
         <div class="login">
@@ -32,15 +34,14 @@
         </div>
     </div>
     <div class="box-bottom">
-        <table class="table-choose">
-            <tr>
-                <a href="#" class="giris page-active" id="login">Giriş</a>
-            </tr>
-            <tr>
-                <a href="#" class="kayit" id="register">Kayıt</a>
-            </tr>
-        </table>
-
+                <div class="row">
+                    <div class="column">
+                        <a href="#" class="giris page-active" id="login">Giriş</a>
+                    </div>
+                    <div class="column">
+                        <a href="#" class="kayit" id="register">Kayıt</a>
+                    </div>
+                </div>
     </div>
 </div>
 </body>
